@@ -6,6 +6,8 @@ A precise inspection of all the features is performed to find out the features h
 
 The MSE and RMSE scores of both the models are computed both times, by looking at the scores it is clear that the Random forest Regressor performs well on prediction.
 
+The dataset used is provided here and Prediction.py has the respective code 
+
 Thank You
 
 A case study by Vaishak Bhuvan M R

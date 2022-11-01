@@ -42,14 +42,14 @@ missing = data[data.isnull().any(axis=1)]
 print(missing)
 # axis=1 => to consider at least one column value is missing in a row
 
-""" Points to note:
+'''
 1. Missing values in Jobtype    = 1809
 2. Missing values in Occupation = 1816 
 3. There are 1809 rows where two specific 
    columns i.e. occupation & JobType have missing values
 4. (1816-1809) = 7 => You still have occupation unfilled for 
-   these 7 rows. Because, jobtype is Never worked
-"""
+   these 7 rows. Because, jobtype is Never worked '''
+   
 
 data2 = data.dropna(axis=0)
 data3 = data.copy()

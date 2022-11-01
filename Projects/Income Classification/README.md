@@ -10,4 +10,5 @@ The classifier will then be trained on the features which have the most effect o
 The python code and dataset used are provided in this folder 
 
 Thank You 
-      - Vaishak Bhuvan M R
+
+A project by Vaishak Bhuvan M R

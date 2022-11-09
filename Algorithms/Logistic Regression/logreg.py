@@ -1,10 +1,11 @@
-import os
-os.chdir("D:\ML\ML-codes\My_Repo")
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
+import matplotlib.pyplot as plt
 
 
 data = pd.read_csv(r"D:\ML\ML-codes\My_Repo\Datasets\heart_disease.csv")
@@ -26,7 +27,6 @@ for i in data_num.columns:
     plt.show()
 plt.show()
 
-#performing the EDA
 plt.figure(figsize=(15,6))
 sns.countplot(y=data['Sex'],hue='HeartDisease', data=data)
 plt.xticks(rotation = 0)
@@ -111,3 +111,28 @@ y_pred = model.predict(x_test)
 
 print("Training Accuracy :", model.score(x_train, y_train))
 print("Testing Accuracy :", model.score(x_test, y_test))
+
+from sklearn.metrics import accuracy_score,confusion_matrix
+
+#checking the Confusion Matrix for the model
+cm = confusion_matrix(y_test, y_pred)
+
+fig, ax = plt.subplots(figsize=(5, 5))
+ax.matshow(cm, cmap=plt.cm.Oranges, alpha=0.3)
+for i in range(cm.shape[0]):
+    for j in range(cm.shape[1]):
+        ax.text(x=j, y=i,s=cm[i, j], va='center', ha='center', size='xx-large')
+        
+plt.xlabel('Predictions', fontsize=18)
+plt.ylabel('Actuals', fontsize=18)
+plt.title('Confusion Matrix', fontsize=18)
+plt.show()
+
+#checking the precision, recall and F1 score of the model
+print('Precision: %.3f' % precision_score(y_test, y_pred))	
+print('Recall: %.3f' % recall_score(y_test, y_pred))
+print('F1 Score: %.3f' % f1_score(y_test, y_pred))
+
+
+#printing the number of missclassified samples in the test set
+print('Misclassified samples: %d' % (y_test != y_pred).sum())

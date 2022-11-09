@@ -1,4 +1,4 @@
-#Heart Disease detection using Logistic Regression
+# Heart Disease detection using Logistic Regression
 
 Here, the dataset is pretty straight forward with less complexions it has no null values to be imported or dropped.
 First we perform the EDA and check the feature columns which have the most impact on the dependent variable and remove the 

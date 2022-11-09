@@ -1,4 +1,4 @@
-# Hotel Cancellation Prediction Using Neural Network
+# Hotel Cancellation Prediction Using Artificial Neural Network
 
 The following Network works with the prediction of Hotel reservation cancellation of customers using the Neural Network with sigmoid function as the activation fuction 
 in the output layer

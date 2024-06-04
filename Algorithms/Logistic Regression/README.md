@@ -12,5 +12,3 @@ The model achieves an accuracy score of 91%
 The dataset is provided in the same directory for use.
 
 Thank you 
-
-A model demo by Vaishak Bhuvan M R

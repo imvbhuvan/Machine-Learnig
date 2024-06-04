@@ -9,5 +9,3 @@ A graph is plotted for the original and predicted stock prices which will help i
 The dataset is directly downloaded for whichever company desired using the yfinance library
 
 Thank You
-
-A Forecasting model by Vaishak Bhuvan M R

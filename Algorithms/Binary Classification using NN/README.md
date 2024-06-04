@@ -11,4 +11,3 @@ This is basic network I had built during my kaggle course which is very fundamen
 
 Thank You
 
-A Network demo by Vaishak Bhuvan M R

@@ -10,4 +10,3 @@ Please [clickhere](https://drive.google.com/drive/folders/1hdUeh5cxmTlT01icNekO5
 
 Thank You 
 
-A model demo by Vaishak Bhuvan M R
